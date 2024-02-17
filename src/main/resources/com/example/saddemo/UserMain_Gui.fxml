@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.saddemo.UserMain_Gui">
+    <children>
+        <ImageView fitHeight="530.0" fitWidth="731.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+         <image>
+            <Image url="@images/Un%20trozo%20de%20papel%20azul%20roto_%20nota%20tiras%20de%20papel%20para%20texto%20o%20mensaje%20pegado%20sobre%20un%20fondo%20azul%20_%20Foto%20Premium%20(1).jpeg" />
+         </image></ImageView>
+        <TextField fx:id="search_TextField" alignment="TOP_CENTER" blendMode="MULTIPLY" layoutX="118.0" layoutY="103.0" prefHeight="31.0" prefWidth="404.0" promptText="Search using your filter...">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></TextField>
+        <Text fill="#015768" layoutX="205.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wolves Library" wrappingWidth="230.780029296875">
+            <font>
+                <Font name="Dubai Regular" size="36.0" />
+            </font>
+        </Text>
+      <MenuButton alignment="CENTER" blendMode="MULTIPLY" layoutX="477.0" layoutY="201.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" text="Filter" textFill="#015768">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#search_byauthor" text="By Author" />
+          <MenuItem mnemonicParsing="false" onAction="#search_byTitle" text="By Book Title" />
+            <MenuItem mnemonicParsing="false" onAction="#searchByBookId" text="By Book ID" />
+        </items>
+      </MenuButton>
+      <Button blendMode="MULTIPLY" layoutX="54.0" layoutY="343.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" textFill="#015768" />
+      <Button blendMode="MULTIPLY" layoutX="293.0" layoutY="343.0" mnemonicParsing="false" onAction="#LoanBook" prefHeight="25.0" prefWidth="91.0" text="Loan Book" />
+    </children>
+</AnchorPane>

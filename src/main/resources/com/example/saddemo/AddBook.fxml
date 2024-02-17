@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.saddemo.Bookadd_Gui">
+   <children>
+      <ImageView fitHeight="468.0" fitWidth="714.0" layoutX="-114.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+         <image>
+            <Image url="@images/Premium%20Photo%20_%20Top%20view%20of%20white%20office%20desk%20table%20with%20copy%20space_%20flat%20lay_.jpeg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="BookId_text" blendMode="MULTIPLY" layoutX="181.0" layoutY="83.0" promptText="book id">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="Availabiltiy_text" blendMode="MULTIPLY" layoutX="182.0" layoutY="151.0" promptText="availability">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="Title_text" blendMode="MULTIPLY" layoutX="182.0" layoutY="215.0" promptText="title">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></TextField>
+      <Text fill="#015768" layoutX="29.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Id">
+         <font>
+            <Font name="Georgia" size="19.0" />
+         </font></Text>
+      <Text fill="#015768" layoutX="16.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Availability">
+         <font>
+            <Font name="Georgia" size="19.0" />
+         </font></Text>
+      <Text fill="#015768" layoutX="20.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Title">
+         <font>
+            <Font name="Georgia" size="19.0" />
+         </font></Text>
+      <Text fill="#015768" layoutX="30.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author">
+         <font>
+            <Font name="Georgia" size="19.0" />
+         </font></Text>
+      <TextField fx:id="Author_text" blendMode="MULTIPLY" layoutX="181.0" layoutY="270.0" promptText="author">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></TextField>
+      <Button blendMode="MULTIPLY" layoutX="378.0" layoutY="339.0" mnemonicParsing="false" onAction="#clickedonAdd" prefHeight="25.0" prefWidth="83.0" text="Add" textFill="#015768" />
+      <Button blendMode="MULTIPLY" layoutX="73.0" layoutY="339.0" mnemonicParsing="false" onAction="#Back" prefHeight="32.0" prefWidth="77.0" text="Back" textFill="#015768" />
+      <Text fill="#015768" layoutX="146.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wolves Library">
+         <font>
+            <Font name="Rockwell Bold Italic" size="36.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

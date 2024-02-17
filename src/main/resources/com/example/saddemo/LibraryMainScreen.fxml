@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.control.TextField?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.saddemo.Librarian_ScreenGui">
+   <children>
+      <ImageView fitHeight="458.0" fitWidth="699.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/How%20to%20Make%20Money%20as%20a%20Health%20Coach%20__%20Four%20Wellness%20Co_.jpeg" />
+         </image>
+      </ImageView>
+      <MenuButton fx:id="settings" alignment="CENTER" blendMode="MULTIPLY" layoutX="194.0" layoutY="229.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text=" Book Settings " textFill="#015768">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#choose_update_author" text="Update Book Author " />
+          <MenuItem mnemonicParsing="false" onAction="#choose_update_availability" text="Update Book Availability" />
+            <MenuItem mnemonicParsing="false" onAction="#choose_update_title" text="Update BookTitle" />
+            <MenuItem mnemonicParsing="false" onAction="#choose_AddBook" text="Add  New Book" />
+            <MenuItem mnemonicParsing="false" onAction="#choose_DeleteBook" text="Delete Book " />
+        </items>
+         <font>
+            <Font name="Georgia" size="16.0" />
+         </font>
+      </MenuButton>
+      <Text fill="#015768" fontSmoothingType="LCD" layoutX="144.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to your creativity hub" wrappingWidth="311.13671875">
+         <font>
+            <Font name="Rockwell Bold Italic" size="36.0" />
+         </font>
+      </Text>
+      <Text fill="#015768" fontSmoothingType="LCD" layoutX="14.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pull down the menu for your desired action" wrappingWidth="243.13671875">
+         <font>
+            <Font name="Georgia" size="19.0" />
+         </font>
+      </Text>
+      <TextField fx:id="hidden" layoutX="492.0" layoutY="19.0" visible="false" />
+   </children>
+</AnchorPane>
